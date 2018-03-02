@@ -1,7 +1,7 @@
 from distutils.core import setup
 setup(
-  name = 'mypackage',
-  packages = ['mypackage'], # this must be the same as the name above
+  name = 'RATTSeminarFri',
+  packages = ['RATTSeminarFri'], # this must be the same as the name above
   version = '0.1',
   description = 'A guess game',
   author = 'Sam',
