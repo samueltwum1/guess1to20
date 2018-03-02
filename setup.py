@@ -6,8 +6,8 @@ setup(
   description = 'A guess game',
   author = 'Sam',
   author_email = 'samueltwum1@gmail.com',
-  url = 'git@github.com:samueltwum1/guess1to20.git', # use the URL to the github repo
-  download_url = 'https://github.com/samueltwum1/guess1to20.git', # I'll explain this in a second
+  url = 'https://github.com/samueltwum1/guess1to20', # use the URL to the github repo
+  download_url = 'https://github.com/samueltwum1/guess1to20/archive/0.1.tar.gz', # I'll explain this in a second
   keywords = ['gaming', 'smart', 'women'], # arbitrary keywords
   classifiers = [],
 )
