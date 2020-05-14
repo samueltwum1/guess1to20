@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Created on Fri Mar  2 02:37:32 2018
 
@@ -7,27 +6,21 @@ Created on Fri Mar  2 02:37:32 2018
 
 import random
 
-def guessGame():
+def the_game():
     guesses_made = 0
-    
-    name = raw_input('Hello! What is your name?\n')
-    
+    name = raw_input('Hello! What is your name?\n') 
     number = random.randint(1, 20)
-    print 'Well, {0}, I am thinking of a number between 1 and 20.'.format(name)
+    print '\nAlright {0}, lets play a game. I am thinking of a number between 1 and 20.'.format(name)
     
+    # keep requesting for a guess so long as user has not had 5 tries
     while guesses_made < 6:
-    
         guess = int(raw_input('Take a guess: '))
-    
         guesses_made += 1
-    
         if guess < number:
-            print 'Your guess is too low.'
-    
-        if guess > number:
-            print 'Your guess is too high.'
-    
-        if guess == number:
+            print 'Your guess is too low.\n'
+        elif guess > number:
+            print 'Your guess is too high.\n'
+        else:
             break
     
     if guess == number:
@@ -35,4 +28,4 @@ def guessGame():
     else:
         print 'Nope. The number I was thinking of was {0}'.format(number)
         
-guessGame()
+the_game()
